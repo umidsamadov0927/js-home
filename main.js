@@ -1,62 +1,82 @@
 // 1
-// function talaba (ism,familiya,yosh,kurs,universitit) {
-//     this.name = ism
-//     this.family = familiya
-//     this.yosh = yosh
-//     this.kurs = kurs
-//     this.universitit = universitit
-// }
-// let malumot = new talaba("umid","samadov",18,1,"tatu")
-// console.log(malumot)
+// let users = document.querySelector("#users")
+// let names = [
+//     {
+//         name: "Jordan",
+//         age: 35,
+//     },
+//     {
+//         name: "kamron",
+//         age: 65,
+//
+//     },
+//     {
+//         name: "ahmad",
+//         age: 11
+//     }
+// ]
+// names.forEach(ism => {
+//     let box = document.createElement("div");
+//     box.innerHTML = `<p>${"Ismi: " + ism.name}</p> <p>${ "yoshi: " + ism.age}</p>`;
+//     users.appendChild(box)
+// })
 
 // 2
-// function kvadrat (tomoni) {
-//     this.tomoni1 = tomoni
-// }
-// kvadrat.prototype.peremetr = function () {
-//     return 4 * this.tomoni1;
-// }
-// kvadrat.prototype.yuzasi = function () {
-//     return this.tomoni1 * this.tomoni1
-// }
-// let tomonlari = new kvadrat(8);
-// console.log("peremeti: " + tomonlari.peremetr());
-// console.log("yuzasi: " + tomonlari.yuzasi());
+// let div = document.querySelector("#product-list");
+// let products = ["olma" , "banan" , "anor" , "gilos"]
+// products.forEach(foreach_mevalar => {
+//     let yangi = document.createElement("div");
+//     yangi.innerHTML = `<li>${foreach_mevalar}</li>`;
+//     div.appendChild(yangi);
+// })
 
 // 3
-// function talaba (ism,familiya,yosh,kurs,universitit) {
-//     this.name = ism
-//     this.family = familiya
-//     this.yosh = yosh
-//     this.kurs = kurs
-//     this.universitit = universitit
+// let welcome = document.getElementById("welcome");
+// let user = {
+//     name: "odil",
+//     age: 28,
+//     isMember: true,
 // }
-// talaba.prototype.getInfo = function (){
-//     console.log("Salom mening ismim " + this.name + " familiyam " + this.family + " yoshim " + this.yosh + " da men hozirda " + this.universitit + " da uqiyman va men " + this.kurs + " chi kurs man")
+// if(user.isMember){
+//     document.getElementById("welcome").innerHTML = "Xush kelibsiz, Odil!"
 // }
-// let talabaDate = new talaba("Shahriyor","Zafarov",19,2,"TATU")
-// talabaDate.getInfo()
 
-// 4
-// Array.prototype.a = function () {
-//     return this[this.length - 1];
-// }
-// let b = [1,2,3,4,5];
-// console.log(b.a())
-
-// 5
-// function boshHarf (suz) {
-//     return suz[0].toUpperCase() + suz.slice(1);
-// }
-//
-// console.log(boshHarf(prompt("so'z kiriting")));
+// // 4
+// let div = document.getElementById("buttons");
+// const colors = ["qizil", "yashil", "ko'k"];
+// colors.forEach(btn_color => {
+//     let yangi_div = document.createElement("button");
+//     yangi_div.style.width = "50px"
+//     yangi_div.style.height = "50px";
+//     yangi_div.innerHTML = "bosing"
+//     yangi_div.style.marginLeft = "10px";
+//     yangi_div.addEventListener("click", () => {
+//         alert(btn_color)
+//     })
+//     div.appendChild(yangi_div);
+// })
 
 // 6
-// function User (age) {
-//     this.age = age;
-// }
-// User.prototype.isAdult = function () {
-//     return this.age >= 18
-// }
-// let user2 = new User(prompt("Yoshinggizni kiriting"));
-// alert(user2.isAdult());
+// let div = document.getElementById("cards");
+// let books = [
+//     {title: "JavaScript Asoslari", author: "Hasan"},
+//     {title: "React Darslari", author: "Ali"}
+// ]
+// books.forEach(book => {
+//     let yangi_div = document.createElement("div");
+//     yangi_div.innerHTML = `<p>${book.title}</p>  <p>${"Mualifi: " + book.author}</p>`;
+//     div.appendChild(yangi_div)
+// })
+
+// 7
+// let div = document.getElementById("product")
+// let products = [
+//     {name:"olma" , price:5000},
+//     {name:"anor" , price:8000},
+//     {name:"banan" , price:6000}
+// ]
+// products.forEach(product => {
+//     let yangi_div = document.createElement("div")
+//     yangi_div.innerHTML = `${product.name} - ${product.price + " mln so'm" }`
+//     div.appendChild(yangi_div)
+// })
